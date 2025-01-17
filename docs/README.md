@@ -1,6 +1,12 @@
 # Instructions
 
-This directory has information for building your own Sawppy the Rover
+This directory has information for building your own Sawppy the Rover.
+Some of the tools required are listed in the [tools list](Tools.md).
+
+All Sawppy information is shared freely. Those who wish to support this
+project may choose to purchase certain parts via
+[Amazon affiliate links.](AmazonAssociate.md)
+(This does not increase your purchase price.)
 
 ## 3D Printed Components
 [General overview](Print%20Overview.md) of 3D-printed rover parts.
@@ -60,7 +66,7 @@ to see how parts are supposed to fit together.
 * [Suspension Bogie](AssembleBogie.md)
 * [Suspension Rocker and final assembly](AssembleRocker.md)
 
-Once all the wheels are bolted on to the suspension, your Sawppy will be mechanically complete!
+Once all the wheels are attached to the suspension via M3x16mm bolts, your Sawppy will be mechanically complete!
 
 ![Mechanical chassis](images/MechanicalChassis.jpg)
 
@@ -79,14 +85,52 @@ tolerate more than a few amps, a [10A fuse to protect against short circuits](ht
 * Ten serial bus servos connected in parallel to the translator board.
 
 ![Schematic](images/Sawppy%20V1%20Schematic.png)
+[Click here to open schematic in Digi-Key's web-based Scheme-It tool.](https://www.digikey.com/schemeit/project/sawppy-v1-EKLPGFO401M0)
 
 Optional components visible in some Sawppy pictures:
 * A [USB webcam](https://newscrewdriver.com/2018/06/19/sawppy-the-backyard-rover/).
 * Google [AIY Vision kit](https://newscrewdriver.com/2018/06/18/sawppy-the-rovers-mast-cameras/).
 * A dual-band wireless router for [greater range and access to 5GHz band](https://newscrewdriver.com/2018/07/15/sawppy-the-rover-receives-wifi-upgrade-increases-range/).
 
-## Rover Control Software
+# Control Software
+
+There are many different options to control a Sawppy rover.
+
+## Browser-Based UI
 
 For driving Sawppy like a remote controlled vehicle (a.k.a. 'teleoperation')
+using a web browser-based control interface,
 Sawppy can borrow software from [SGVHAK Rover](http://bit.ly/sgvhak_rover).
 See [instructions to modify SGVHAK Rover software to Sawppy](SGVHAK%20Rover%20Software.md).
+
+## Traditional RC Receiver
+
+Rover builders who prefer a more traditional remote control unit can draw from
+[Marco Walther's implementation](https://github.com/mw46d/SGVHAK_Rover).
+
+## Robot Operating System (ROS) by Rhys Mainwaring
+
+For experiments in autonomous operation using ROS, please see 
+[Rhys Mainwaring's Curio rover project.](https://github.com/srmainwaring/curio)
+This is a completely different rover control software
+stack built on ROS Melodic, including support for RViz visualization and Gazebo
+simulation, plus a way to extract useful odometry data from servo position reports
+that are only accurate in a ~240 arc out of 360 degrees.
+
+## ROS 2 Software Stack by Miguel Ángel González Santamarta
+
+I've also learned of a ROS2 Foxy software stack for Sawppy
+[available here.](https://github.com/mgonzs13/ros2_rover)
+
+## Wired Arduino
+
+As an alternative to Raspberry Pi based wireless control, there is now an
+option to build Sawppy as a wired control rover. This avoids wireless
+communication issues in crowded environments (like a Maker Faire) and can
+be kept as a backup option. Alternatively, it allows interfacing with
+anything that can communicate with an Arduino. Code for Arduino sketch is
+under the [arduino_sawppy](../arduino_sawppy) directory.
+
+Here's a wiring diagram contributed by [Martin](https://hackaday.io/Plaville)
+
+![Arduino wiring diagram by martin](images/Arduino-wiring-by-Martin.jpg)

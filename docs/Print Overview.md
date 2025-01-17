@@ -18,7 +18,7 @@ signs of (ab)use by its previous owner. The condition will be the luck of the dr
 
 This printer has a print bed 200mm wide by 200mm deep and roughly 180mm tall which can
 comfortably print any single rover part. (It's actually large enough to print several parts at once.)
-Most rover parts can in theory fit within the 120mm x 120mm area of the 
+Most rover parts can in theory fit within the 120mm x 120mm area of the
 [Monoprice Maker Select Mini](https://www.monoprice.com/product?p_id=15365)
 (or [open box](https://www.monoprice.com/product?p_id=30386)) but a few large parts (like the differential
 brace) will not fit and some parts (like the wheel) will be a very tight fit.
@@ -40,7 +40,7 @@ an [Azteeg X5 mini](http://www.panucatt.com/azteeg_X5_mini_reprap_3d_printer_con
 * The first draft of the rover was printed in PLA, the second in PETG. While the stock print head for
 the Monoprice Maker Select is technically capable of PETG, it could only reliable extrude at a very
 slow rate. In order to speed up printing PETG the stock print hardware must be upgraded to an all-metal
-hot end, in my case an [E3D Titan Aero](https://e3d-online.com/titan-aero-builder).
+hot end, in my case an [E3D Titan Aero](https://e3d-online.com/titan-aero).
 
 ## STL Orientation
 
@@ -53,6 +53,11 @@ possible, use your slicer's function to orient a model to print bed.
 * Simplify3D: Edit/[Place Surface on Bed](https://www.simplify3d.com/support/articles/importing-and-manipulating-your-models/) (Ctrl-L)
 * Slic3r Prusa Edition: [Place on Face](https://twitter.com/josefprusa/status/1033719313751044096)
 * Cura: [Lay flat](https://ultimaker.com/en/resources/16583-adjusting-the-model)
+* MatterControl: [Lay flat](https://www.matterhackers.com/articles/mattercontrol-design-tools)
+
+If your slicer software does not have similar functionality, use
+[Meshmixer](http://www.meshmixer.com/) to reorient STL. Here is [one tutorial](https://mattshub.com/2018/02/24/orientating-parts-in-meshmixer/)
+out of many available online to guide through the process.
 
 ## STL Slicer Settings
 

@@ -5,7 +5,7 @@ These parts make up the box that serves as the rover's main body and equipment b
 **Estimated Time:** 1 hour 15 minutes
 
 **Parts:**
-* 4 * [Printed corner pieces0(Print%20Body%20Box%20Corners.md)
+* 4 * [Printed corner pieces](Print%20Body%20Box%20Corners.md)
 * 4 * [385mm extrusion beams](Misumi%20HFS%203.md)
 * 4 * [245mm extrusion beams](Misumi%20HFS%203.md)
 * 2 * [Rocker joint body mount](AssemblePivotJoints.md)
@@ -23,6 +23,8 @@ These parts make up the box that serves as the rover's main body and equipment b
 ![Body left](images/Body04-Left.jpg)
 
 ![Body right](images/Body05-Right.jpg)
+
+**Note:** Before attaching the rear body portion to the body sides, the last 4 of the [Installation tools for 3 M3 nuts, 20mm apart](Print%20M3%20Installation%20Tool.md) should be installed in the top beam of the right and left body sides for future installation of the [Differential End Pieces](../STL/DiffEnd.stl) during the [Suspension Differential Assembly](AssembleDifferential.md). They are installed in the top and outside slots of the top beams.
 
 ![Body joined](images/Body06-Joined.jpg)
 
